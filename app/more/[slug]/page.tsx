@@ -13,7 +13,7 @@ export default function MorePage({ params }: { params: { slug: string } }) {
   if (!content) return notFound();
 
   return (
-    <div className="p-6">
+    <div className="p-6 h-screen">
       <h1 className="text-2xl font-bold capitalize">{params.slug.replace("-", " ")}</h1>
       <p className="mt-4">{content}</p>
     </div>

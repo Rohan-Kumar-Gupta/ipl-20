@@ -6,7 +6,6 @@ import MatchCard from "@/app/components/MatchCard";
 import PointsTable from "@/app/components/PointsTable";
 import ScheduleTable from "@/app/components/ScheduleTable";
 import { Match, TeamStanding, ScheduleEntry } from "@/app/types";
-import Navbar from "./components/NavVar";
 
 export default function Home() {
   const { data, error } = useSWR("/api/scrape", fetcher);
@@ -21,7 +20,7 @@ export default function Home() {
 
   return (
     <main className="p-4 max-w-4xl mx-auto space-y-6">
-      <Navbar />
+     
       <h1 className="text-3xl font-bold text-center text-purple-700">
         🏏 IPL T20 Dashboard
       </h1>
